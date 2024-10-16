@@ -1,0 +1,165 @@
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+h1, label {
+    color: rgb(235,138,156);
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    color: rgb(243, 178, 191);
+    font-size: 15px;
+
+}
+
+#form-content p {
+    color: rgb(243, 193, 202);
+    font-size: 12px;
+}
+
+#container {
+    background-color: pink;
+    min-width: 950px;
+    max-width: 1500px;
+    min-height: 530px;
+    max-height: 600px;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 10px 10px 28px -4px rgba(235,138,156,1);
+}
+
+#left-panel {
+    background-image: url("aaron-burden.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    width: 35%;
+    padding: 2%;
+    position: relative;
+    font-family: "Playwrite GB S", cursive;
+}
+
+#left-panel p {
+    color: white;
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 25px; 
+    font-size: 12px;
+    background-color: rgba(235, 138, 156, 0.315);
+}
+
+a {
+    color: white;
+}
+
+#right-panel {
+    background-color: white;
+    justify-content: center;
+    text-align: left;
+    width: 65%;
+    padding: 10%;
+    flex-direction: column;
+    font-family: "Playwrite GB S", cursive;
+}
+
+#form-header {
+    padding-bottom: 10px;
+}
+
+
+#form-content {
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    font-size: 13px;
+}
+
+fieldset {
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+    border: none;
+    gap: 1rem;
+}
+
+fieldset > div {
+    flex: 1;
+    min-width: 150px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+input[type] {
+    font-size: small;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+#button-area {
+    margin-top: 30px;
+}
+
+#button-area, p {
+    font-size: 11px;
+    color: rgb(235,138,156);
+}
+
+button {
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    background-color: pink;
+    border-radius: 8px;
+    font-size: 11px;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    transition: background-color 0.3s ease; 
+    background-color: rgb(235,138,156);
+}
+
+#sign-in {
+    font-weight: bold;
+    text-decoration: underline;
+}
